@@ -1,0 +1,60 @@
+h1,p{
+    text-align: center;
+    color: rgb(21, 20, 20);
+}
+body{
+background-color:rgb(200, 223, 168);
+}
+.out{
+    color: rgb(17, 7, 7);
+   text-transform:capitalize;
+   font-weight: 800;
+   padding-right: 13rem;
+
+  
+
+}
+.in{
+  color: rgb(17, 7, 7);
+  text-transform:capitalize;
+  font-weight: 800;
+  margin: 1.3rem;
+ 
+}
+
+ input,textarea{
+  width: 250px;
+  height: 25px;
+  border-width: 15px;
+  font-weight: 800;
+  border-radius:20px;
+  margin:0.5rem auto;
+  block-size: auto;
+  display: block;
+  }
+  
+fieldset{
+  margin:3rem auto;
+text-align: center;
+border-width:0 ;
+}
+
+button
+{
+  width:200px;
+  margin:1.5rem auto;
+  border-width: 15px;
+  font-weight: 800;
+  border-radius:200px;
+  border-color: darkgray;
+}
+.in1{
+  color: rgb(17, 7, 7);
+  text-transform:capitalize;
+  font-weight: 800;
+  margin: 1.3rem;
+  display: block;
+}
+
+
+

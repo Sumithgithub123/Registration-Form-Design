@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+    <h1>Registration Form</h1>
+    <p><em>please fill the form</em></p>
+    <fieldset >
+    <form>
+        <div>
+        <label class="out" for="name">Name: </label>
+        <input required placeholder="Enter your name..." type="text" />
+        </div>
+        <div>
+        <label class="out" for="email">email: </label>
+        <input placeholder="Enter your email..." required type="email" />
+        </div>
+        <div>
+        <label class="out" for="age">age: </label>
+        <input min="1" max="120" placeholder="Enter your age..."  required type="number" />
+        </div>
+        <div>
+            <label class="out" for="bio">bio:</label>
+            <textarea placeholder="Enter about you..."></textarea>
+        </div>
+        <div class="in">
+        <label >rate the form: </label>
+        <select required >
+            <option value="">Select</option>
+            <option value="1">Good</option>
+            <option value="2">Average</option>
+            <option value="3">Bad</option></select><br>
+            <button type="submit">Submit</button>
+        </div>
+        </form>
+  </fieldset>
+    </body>
+</html>
