@@ -12,19 +12,19 @@
     <form>
         <div>
         <label class="out" for="name">Name: </label>
-        <input required placeholder="Enter your name..." type="text" />
+        <input required name="username" placeholder="Enter your name..." type="text" />
         </div>
         <div>
         <label class="out" for="email">email: </label>
-        <input placeholder="Enter your email..." required type="email" />
+        <input name="email" placeholder="Enter your email..." required type="text" />
         </div>
         <div>
         <label class="out" for="age">age: </label>
-        <input min="1" max="120" placeholder="Enter your age..."  required type="number" />
+        <input name="age" min="1" max="120" placeholder="Enter your age..."  required type="number" />
         </div>
         <div>
             <label class="out" for="bio">bio:</label>
-            <textarea placeholder="Enter about you..."></textarea>
+            <textarea name="bio" placeholder="Enter about you..."></textarea>
         </div>
         <div class="in">
         <label >rate the form: </label>
@@ -37,5 +37,6 @@
         </div>
         </form>
   </fieldset>
+  <p id="end"><i>Thankyou!!!</i></p>
     </body>
 </html>
