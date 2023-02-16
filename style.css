@@ -4,15 +4,16 @@ h1,p{
 }
 body{
 background-color:rgb(200, 223, 168);
+font-family: 'Tangerine', serif;
+font-size: 22px;
+text-shadow: 4px 4px 4px #aaa;
+caret-color:rgba(0,0,0,0);
 }
 .out{
     color: rgb(17, 7, 7);
    text-transform:capitalize;
    font-weight: 800;
    padding-right: 13rem;
-
-  
-
 }
 .in{
   color: rgb(17, 7, 7);
@@ -24,37 +25,102 @@ background-color:rgb(200, 223, 168);
 
  input,textarea{
   width: 250px;
-  height: 25px;
-  border-width: 15px;
+  height: 100px;
+  position:relative;
   font-weight: 800;
-  border-radius:20px;
+  border-radius:6em;
   margin:0.5rem auto;
   block-size: auto;
   display: block;
+  border:hidden;
+  padding: 1em 1.5em;
+  outline: none;
+  caret-color: rgba(0,0,0,0);
+  font-family:'Tangerine', serif;
+  font-size:medium;
+  transition:all .4s;
+  }
+  input:hover{
+    transform:translate(5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  textarea:hover{
+    transform:translate(5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  fieldset{
+    margin:3rem auto;
+  text-align: center;
+  border-width:0 ;
   }
   
-fieldset{
-  margin:3rem auto;
-text-align: center;
-border-width:0 ;
-}
-
 button
 {
-  width:200px;
-  margin:1.5rem auto;
-  border-width: 15px;
-  font-weight: 800;
-  border-radius:200px;
-  border-color: darkgray;
+  position: relative;
+ font-size: 17px;
+ text-transform: uppercase;
+ text-decoration: none;
+ padding: 1em 2.5em;
+ display: inline-block;
+ border-radius: 6em;
+ transition: all .4s;
+ border: none;
+ font-family: inherit;
+ font-weight: 500;
+ color: black;
+ background-color: rgb(250, 251, 249);
+ margin:1.3rem auto;
+ 
 }
-.in1{
-  color: rgb(17, 7, 7);
-  text-transform:capitalize;
-  font-weight: 800;
-  margin: 1.3rem;
-  display: block;
+button:hover {
+  transform: translate(5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ }
+ 
+ button:active {
+  transform: translate(15px);
+  box-shadow: 0 15px 7.5px rgba(0, 0, 0, 0.2);
+ }
+ button::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+ }
+ 
+ textarea{
+  resize: none;
+ }
+ select{
+  border: none;
+  width: 70px;
+  height: 20px;
+  position:relative;
+  outline: none;
+  transition: all .4s;
+  border-radius: 100px;
+ }
+ select:hover{
+  transform: translate(5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ }
+#end{
+animation:example 1s linear infinite alternate;
+padding-bottom: 30px;
 }
+@keyframes example {
+  0% {transform: translateY(20px);}
+  100% {transform:  translateY(-20px);}
+}
+ 
+
+
 
 
 
